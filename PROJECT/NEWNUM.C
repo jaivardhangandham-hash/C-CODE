@@ -39,7 +39,7 @@ int main()
                 printf("EIGHT ");
             if (a==9)  
                 printf("NINE ");
-                
+           
         }
         
     }
