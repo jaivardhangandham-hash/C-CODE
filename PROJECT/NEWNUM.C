@@ -3,7 +3,7 @@
 
 int main()
 {
-    int num,count=0,newnum=1,power=10,pval,a;
+    int num,count=0,newnum=1,power=10,pval,a=1;
     printf("ENTER A NUMBER - ");
     scanf("%d",&num);
     if (num>0)
@@ -14,8 +14,9 @@ int main()
                 power=power*10;
                 count++;
             }
-        while (num>0)
-        {if (num>0)
+        while (count>0)
+        {
+        if (count>0)
             a=num*100/power;
             num=num-a*power/100;
             power=power/10;
@@ -39,7 +40,7 @@ int main()
                 printf("EIGHT ");
             if (a==9)  
                 printf("NINE ");
-        
+        count--;
         }
     }
     else
