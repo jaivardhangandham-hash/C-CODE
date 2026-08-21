@@ -41,7 +41,6 @@ int main()
                 printf("NINE ");
         
         }
-        
     }
     else
         printf("ZERO");
