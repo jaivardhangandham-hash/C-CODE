@@ -16,7 +16,6 @@ int main()
             }
         while (count>0)
         {
-        if (count>0)
             a=num*100/power;
             num=num-a*power/100;
             power=power/10;
