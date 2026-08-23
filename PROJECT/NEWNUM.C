@@ -39,6 +39,10 @@ int main()
                 printf("EIGHT ");
             if (a==9)  
                 printf("NINE ");
+            if (count==4 && a!=0)
+                printf("THOUSAND ");
+            if (count==3 && a!=0)
+                 printf("HUNDRED ");
         count--;
         }
     }
