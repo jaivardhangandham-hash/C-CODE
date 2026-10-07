@@ -1,20 +1,28 @@
 #include <stdio.h>
 int main()
-{   
-    int num[] = {1,0,7,8,3,7,2,8,0,3,5,7,0} , reqnum , i = 0 , status = 0 ;
-    printf("ENTER NUMBER YOU WANT TO FIND - ") ; scanf("%d",&reqnum) ;
-    while ( i != 12 )
+{
+    int count , inputnums[count] , reqnum ;
+    
+    printf("ENTER NUMBER OF ELEMENTS - ") ;
+    scanf( "%d" , &count ) ;
+    
+    printf( "ENTER %d ELEMENTS - " , count ) ;
+    for ( int i = 0 ; i < count ; i++)
     {
-        if (num[i] == reqnum)
+        scanf( "%d" , &inputnums[i] ) ;
+    }
+
+    printf("ENTER A NUMBER TO FIND - ") ; 
+    scanf( "%d" , &reqnum ) ;
+
+    for ( int j = 0 ; j < count ; j++ )
+    {
+        if ( inputnums[j] == reqnum )
         {
-            printf("%d is at index %d\n",reqnum,i);
-            status = 1 ;
+            printf( "%d is found at index %d of the array" , reqnum , j ) ;
+            break ;
         }
-        i++ ;
     }
-    if (status == 0)
-    {
-        printf("%d is not found",reqnum);
-    }
+
     return 0 ;
 }
