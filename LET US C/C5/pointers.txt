@@ -1,0 +1,4 @@
+There are two ways to declare pointer variables in C:
+
+int* myNum;
+int *myNum;
